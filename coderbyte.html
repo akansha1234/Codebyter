@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  	.container{
+  		text-align: center;
+  		margin-top: 0px;
+  	}
+  	.logo{
+  		text-align: center;
+  		margin-top: -40px;
+  		margin-left:40px;
+  	}
+  	img{
+  		width:400px;
+  		height:200px;
+  	}
+  	.d-flex{
+  		display: flex;
+  		justify-content: space-around;
+  	}
+  	.tagline{
+         margin-top: -32px;
+         text-align: center;
+  	}
+  	.content{
+  		margin:42px auto;
+  		width:530px;
+  	}
+  	.rectangle,.Competency,.Trust,.Service{
+  		border: 1px solid grey;
+  		width:100px;
+  		height:50px;
+  		outline: none;
+  		border-top-left:30px;
+  	}
+  	.values{
+  		text-align: center;
+  	}
+  	.red{
+  		background-color: red;
+  		border:1px solid red;
+  	}
+  	.orange{
+  		background-color:orange;
+  		border:1px solid orange;
+  	}
+  	.yellow{
+  		background-color:yellow;
+  		border:1px solid yellow;
+  	}
+  	.light-green{
+  		background-color: #32CD32;
+  		border:1px solid #32CD32;
+  	}
+  	.green{
+  		background-color: green;
+  		border:1px solid green;
+  	}
+  	.btn{
+  		background-color: green;
+  		color: white;
+  		padding: 10px 75px;
+  		font-size: 20px;
+  		margin-bottom: 10px;
+  	}
+  </style>
+</head>
+<body>
+<div class="container">
+	<div class="logo">
+		<img src="https://media-exp1.licdn.com/dms/image/C511BAQGWaXitZBxcKw/company-background_10000/0/1554372266432?e=2159024400&v=beta&t=cTcUZ4yLwW62-un6TtVoOhCG9G3vNrAfBZPjKj5ue7s">
+		<div class="tagline">Please rate your satisfaction on the following attributes of our service</div>
+	</div>
+	<div class="content">
+		<h3>Responsiveness</h3>
+		<div class="d-flex justify-content-center">
+			<div class="squares">
+				<p class="values">Extremely Bad</p>
+				<input type="button" class="rectangle" onclick="changeColor(this)" id="Extremely Bad">
+			</div>
+			<div class="squares">
+				<p class="values">Bad</p>
+				<input type="button" class="rectangle" onclick="changeColor(this)" id="Bad">
+			</div>
+			<div class="squares">
+				<p class="values">Neutral</p>
+				<input type="button" class="rectangle" onclick="changeColor(this)" id="Neutral">
+			</div>
+			<div class="squares">
+				<p class="values">Good</p>
+				<input type="button" class="rectangle" onclick="changeColor(this)" id="Good">
+			</div>
+			<div class="squares">
+				<p class="values">Extremely Good</p>
+				<input type="button" class="rectangle" onclick="changeColor(this)" id="Extremely Good">
+			</div>
+		</div>
+	</div>
+
+	<div class="content">
+		<h3>Competency in advertising right Solutions</h3>
+		<div class="d-flex justify-content-center">
+			<div class="squares">
+				<p class="values">Extremely Bad</p>
+				<input type="button" class="Competency" onclick="changeColor2(this)" id="Extremely Bad">
+			</div>
+			<div class="squares">
+				<p class="values">Bad</p>
+				<input type="button" class="Competency" onclick="changeColor2(this)" id="Bad">
+			</div>
+			<div class="squares">
+				<p class="values">Neutral</p>
+				<input type="button" class="Competency" onclick="changeColor2(this)" id="Neutral">
+			</div>
+			<div class="squares">
+				<p class="values">Good</p>
+				<input type="button" class="Competency" onclick="changeColor2(this)" id="Good">
+			</div>
+			<div class="squares">
+				<p class="values">Extremely Good</p>
+				<input type="button" class="Competency" onclick="changeColor2(this)" id="Extremely Good">
+			</div>
+		</div>
+	</div>
+
+
+	<div class="content">
+		<h3>Trustworthiness</h3>
+		<div class="d-flex justify-content-center">
+			<div class="squares">
+				<p class="values">Extremely Bad</p>
+				<input type="button" class="Trust" onclick="changeColor3(this)" id="Extremely Bad">
+			</div>
+			<div class="squares">
+				<p class="values">Bad</p>
+				<input type="button" class="Trust" onclick="changeColor3(this)" id="Bad">
+			</div>
+			<div class="squares">
+				<p class="values">Neutral</p>
+				<input type="button" class="Trust" onclick="changeColor3(this)" id="Neutral">
+			</div>
+			<div class="squares">
+				<p class="values">Good</p>
+				<input type="button" class="Trust" onclick="changeColor3(this)" id="Good">
+			</div>
+			<div class="squares">
+				<p class="values">Extremely Good</p>
+				<input type="button" class="Trust" onclick="changeColor3(this)" id="Extremely Good">
+			</div>
+		</div>
+	</div>
+
+
+	<div class="content">
+		<h3>Customer Service and Support</h3>
+		<div class="d-flex justify-content-center">
+			<div class="squares">
+				<p class="values">Extremely Bad</p>
+				<input type="button" class="Service" onclick="changeColor4(this)" id="Extremely Bad">
+			</div>
+			<div class="squares">
+				<p class="values">Bad</p>
+				<input type="button" class="Service" onclick="changeColor4(this)" id="Bad">
+			</div>
+			<div class="squares">
+				<p class="values">Neutral</p>
+				<input type="button" class="Service" onclick="changeColor4(this)" id="Neutral">
+			</div>
+			<div class="squares">
+				<p class="values">Good</p>
+				<input type="button" class="Service" onclick="changeColor4(this)" id="Good">
+			</div>
+			<div class="squares">
+				<p class="values">Extremely Good</p>
+				<input type="button" class="Service" onclick="changeColor4(this)" id="Extremely Good">
+			</div>
+		</div>
+	</div>
+	<hr>
+	<button type="Submit" class="btn" onclick="submit()">Submit</button>
+</div>
+<script>
+   var squares=document.getElementsByClassName("rectangle");
+   var Competency=document.getElementsByClassName("Competency");
+   var Trust=document.getElementsByClassName("Trust");
+   var Service=document.getElementsByClassName("Service");
+   var a,b,c,d;
+   function changeColor(event){
+   	if(event.id=='Extremely Bad'){
+   		squares[0].classList.add("red");
+   		
+   	}
+   	if(event.id=="Bad"){
+   		for(let i=0;i<=1;i++){
+   		squares[i].classList.add("orange");
+   }
+     //console.log("Responsiveness is " :event.id);
+   	}
+   	if(event.id=="Neutral"){
+   		for(let i=0;i<=2;i++){
+   			squares[i].classList.add("yellow");
+   		}
+   	}
+   	if(event.id=="Good"){
+   		for(let i=0;i<=3;i++){
+        squares[i].classList.add("light-green");
+      	}
+   	}
+   	if(event.id=="Extremely Good"){
+   		for(let i=0;i<=4;i++){
+   		squares[i].classList.add("green");
+  	}
+   	}
+      a="Responsiveness is " + event.id;
+   }
+   function changeColor2(event){
+   	if(event.id=='Extremely Bad'){
+   	    Competency[0].classList.add("red");
+   		
+   	}
+   	if(event.id=="Bad"){
+   		for(let i=0;i<=1;i++){
+   	    Competency[i].classList.add("orange");
+   }
+     //console.log("Responsiveness is " :event.id);
+   	}
+   	if(event.id=="Neutral"){
+   		for(let i=0;i<=2;i++){
+   		    Competency[i].classList.add("yellow");
+   		}
+   	}
+   	if(event.id=="Good"){
+   		for(let i=0;i<=3;i++){
+           Competency[i].classList.add("light-green");
+      	}
+   	}
+   	if(event.id=="Extremely Good"){
+   		for(let i=0;i<=4;i++){
+   	    Competency[i].classList.add("green");
+  	}
+   	}
+      b="Competency in advertising right Solutions is " + event.id;
+   }
+   function changeColor3(event){
+   	if(event.id=='Extremely Bad'){
+   	    Trust[0].classList.add("red");
+   		
+   	}
+   	if(event.id=="Bad"){
+   		for(let i=0;i<=1;i++){
+   	    Trust[i].classList.add("orange");
+   }
+     //console.log("Responsiveness is " :event.id);
+   	}
+   	if(event.id=="Neutral"){
+   		for(let i=0;i<=2;i++){
+   		    Trust[i].classList.add("yellow");
+   		}
+   	}
+   	if(event.id=="Good"){
+   		for(let i=0;i<=3;i++){
+           Trust[i].classList.add("light-green");
+      	}
+   	}
+   	if(event.id=="Extremely Good"){
+   		for(let i=0;i<=4;i++){
+   	    Trust[i].classList.add("green");
+  	}
+   	}
+      c="Trustworthiness is " + event.id;
+   }
+   function changeColor4(event){
+   	if(event.id=='Extremely Bad'){
+   	    Service[0].classList.add("red");
+   		
+   	}
+   	if(event.id=="Bad"){
+   		for(let i=0;i<=1;i++){
+   	    Service[i].classList.add("orange");
+   }
+     //console.log("Responsiveness is " :event.id);
+   	}
+   	if(event.id=="Neutral"){
+   		for(let i=0;i<=2;i++){
+   		    Service[i].classList.add("yellow");
+   		}
+   	}
+   	if(event.id=="Good"){
+   		for(let i=0;i<=3;i++){
+           Service[i].classList.add("light-green");
+      	}
+   	}
+   	if(event.id=="Extremely Good"){
+   		for(let i=0;i<=4;i++){
+   	    Service[i].classList.add("green");
+  	}
+   	}
+      d="Customer Service and Support is " + event.id;
+   }
+   function submit(){
+   	console.log(a);
+   	console.log(b);
+   	console.log(c)
+   	console.log(d)
+   }
+   
+</script>
+</body>
+</html>
